@@ -1,0 +1,8 @@
+temperature = int(input("Temperature: "))
+if temperature > 30:
+    print("its a hot day")
+elif temperature < 10:
+    print("its a cold day ")
+else:
+    print("its neither hot nor cold ")
+
