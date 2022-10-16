@@ -1,0 +1,69 @@
+print("welcome to my computer game ")
+play = input("Do you want to play? ")
+if play.lower() != "yes":
+    quit()
+
+print("okay lets play ")
+score = 0
+
+answer = input("what does cpu stand for? ").lower()
+if answer == "central processing unit":
+    print("Correct answer ")
+    score += 1
+else:
+    print("wrong answer ")
+
+answer = input("What does IANA stand for? ").lower()
+if answer == " Internet assigned numbers authority" :
+    print("Correct answer ")
+    score += 1
+else:
+    print("wrong answer ")
+
+answer = input("What does ram stand for? ").lower()
+if answer == "random access memory ":
+    print("Correct answer ")
+    score += 1
+else:
+    print("wrong answer ")
+
+answer = input("What is the frequency of wifi ").lower()
+if answer == "2.4 ghz " or "5 ghz":
+    print("Correct answer ")
+    score += 1
+else:
+    print("wrong answer ")
+
+answer = input("What is the loop back address for ipv4? ")
+if answer == "127.0.0.1 " :
+    print("Correct answer ")
+    score += 1
+else:
+    print("wrong answer ")
+
+answer = input("What does Psu stand for? ").lower()
+if answer == "power supply" :
+    print("Correct answer ")
+    score += 1
+else:
+    print("wrong answer ")
+
+answer = input("what is the free server for google? ")
+if answer == "8.8.8.8" or "8.8.4.4":
+    print("Correct answer ")
+    score += 1
+else:
+    print("wrong answer ")
+
+answer = input("what is the bios stored in a computer? ").lower()
+if answer == " simons battry" :
+    print("Correct answer ")
+    score += 1
+else:
+    print("wrong answer ")
+
+print(f"you have {score} correct")
+if score > 4:
+    print(f"congratulations you passed with {score / 8 * 100} %")
+else:
+    print(f"Please Try again {score / 8 * 100} %")
